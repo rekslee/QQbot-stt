@@ -1,0 +1,18 @@
+2026-03-20 11:57:16,415 [mlx-asr] INFO: 🔄 Loading model: Qwen/Qwen3-ASR-0.6B ...
+2026-03-20 11:57:16,515 [mlx-asr] INFO: ✅ Model loaded!
+2026-03-20 11:57:16,522 [mlx-asr] INFO: 🚀 http://127.0.0.1:8787  model=Qwen/Qwen3-ASR-0.6B
+INFO:     Started server process [70554]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8787 (Press CTRL+C to quit)
+INFO:     127.0.0.1:57432 - "GET / HTTP/1.1" 200 OK
+2026-03-20 12:12:45,884 [mlx-asr] INFO: 📥 cb0865a33c5aad72f98c748a751c409f.bin → /var/folders/w7/4dl382f92mbdkg1qbs2c9p0h0000gn/T/tmp_n557fho.bin (274638 bytes)
+2026-03-20 12:12:46,508 [httpx] INFO: HTTP Request: GET https://huggingface.co/api/models/Qwen/Qwen3-ASR-0.6B/revision/main "HTTP/1.1 200 OK"
+Fetching 8 files:   0%|          | 0/8 [00:00<?, ?it/s]Fetching 8 files: 100%|██████████| 8/8 [00:00<00:00, 73423.26it/s]
+2026-03-20 12:12:46,535 [mlx_qwen3_asr.load_models] INFO: Loaded 612 weight tensors from 1 files
+2026-03-20 12:12:47,206 [mlx_qwen3_asr.load_models] INFO: Loaded model from /Users/reks/.cache/huggingface/hub/models--Qwen--Qwen3-ASR-0.6B/snapshots/5eb144179a02acc5e5ba31e748d22b0cf3e303b0 with dtype mlx.core.float16
+2026-03-20 12:12:49,027 [mlx-asr] INFO: ✅ 3.14s → "TranscriptionResult(text='我发的这条语音，你看你能不能收到？如果收到，你就给我回复。', language='Chinese', se"
+INFO:     127.0.0.1:58981 - "POST /v1/audio/transcriptions HTTP/1.1" 200 OK
+2026-03-20 13:41:07,623 [mlx-asr] INFO: 📥 5c2d31830c5b65e8c1eded8fda1cc90f.bin → /var/folders/w7/4dl382f92mbdkg1qbs2c9p0h0000gn/T/tmpphz9i0g1.bin (455118 bytes)
+2026-03-20 13:41:20,610 [mlx-asr] INFO: ✅ 12.98s → "TranscriptionResult(text='云测试，这个是服务器端的。请问ESR，如果你收到，请回答。', language='Chinese', se"
+INFO:     127.0.0.1:50514 - "POST /v1/audio/transcriptions HTTP/1.1" 200 OK
